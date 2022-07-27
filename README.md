@@ -9,6 +9,7 @@
 [![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/anchore/grype.svg)](https://github.com/anchore/grype)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/anchore/grype/blob/main/LICENSE)
 [![Slack Invite](https://img.shields.io/badge/Slack-Join-blue?logo=slack)](https://anchore.com/slack)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcatejst%2Fgrype.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcatejst%2Fgrype?ref=badge_shield)
 
 A vulnerability scanner for container images and filesystems. Easily [install the binary](#installation) to try it out. Works with [Syft](https://github.com/anchore/syft), the powerful SBOM (software bill of materials) tool for container images and filesystems.
 
@@ -201,6 +202,9 @@ syft attest --output json --key cosign.key alpine:latest | grype --key cosign.pu
 - **MatchDetails**: This section tries to explain what we searched for while looking for a match and exactly what details on the package and vulnerability that lead to a match.
 - **Artifact**: This is a subset of the information that we know about the package (when compared to the [Syft](https://github.com/anchore/syft) json output, we summarize the metadata section).
   This has information about where within the container image or directory we found the package, what kind of package it is, licensing info, pURLs, CPEs, etc.
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fcatejst%2Fgrype.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fcatejst%2Fgrype?ref=badge_large)
 
 ### Excluding file paths
 
